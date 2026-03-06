@@ -1,10 +1,11 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 
 <head>
 
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Loja Automática</title>
 
@@ -12,20 +13,54 @@
 
 body {
 font-family: Arial;
-text-align:center;
-background:#f5f5f5;
+margin:0;
+background:#f4f4f4;
 }
 
-.produto {
+header {
+background:#111;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+.grid {
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+padding:20px;
+}
+
+.card {
 background:white;
 padding:20px;
-margin:20px;
 border-radius:10px;
-box-shadow:0px 0px 10px rgba(0,0,0,0.1);
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+text-align:center;
 }
 
-img {
+.card img {
 width:150px;
+}
+
+button {
+background:#28a745;
+border:none;
+padding:10px 20px;
+color:white;
+border-radius:5px;
+cursor:pointer;
+}
+
+button:hover {
+background:#218838;
+}
+
+footer {
+background:#111;
+color:white;
+text-align:center;
+padding:20px;
 }
 
 </style>
@@ -34,13 +69,18 @@ width:150px;
 
 <body>
 
+<header>
+
 <h1>🛒 Loja Automática</h1>
 
-<p>Atualizado em 2026-03-06 21:14:28.853102</p>
+<p>Atualizado em 2026-03-06 21:23:47.749528</p>
+
+</header>
+
+<div class="grid">
 
 
-
-<div class="produto">
+<div class="card">
 
 <h2>Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops</h2>
 
@@ -48,15 +88,15 @@ width:150px;
 
 <p>Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, yo</p>
 
-<h3>R$307.79</h3>
+<h3>R$ 278.94</h3>
 
-<button>Comprar</button>
+<button onclick="alert('Produto selecionado')">Comprar</button>
 
 </div>
 
 
 
-<div class="produto">
+<div class="card">
 
 <h2>Mens Casual Premium Slim Fit T-Shirts </h2>
 
@@ -64,15 +104,15 @@ width:150px;
 
 <p>Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable </p>
 
-<h3>R$95.42</h3>
+<h3>R$ 73.88</h3>
 
-<button>Comprar</button>
+<button onclick="alert('Produto selecionado')">Comprar</button>
 
 </div>
 
 
 
-<div class="produto">
+<div class="card">
 
 <h2>Mens Cotton Jacket</h2>
 
@@ -80,15 +120,15 @@ width:150px;
 
 <p>great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountai</p>
 
-<h3>R$248.17</h3>
+<h3>R$ 244.3</h3>
 
-<button>Comprar</button>
+<button onclick="alert('Produto selecionado')">Comprar</button>
 
 </div>
 
 
 
-<div class="produto">
+<div class="card">
 
 <h2>Mens Casual Slim Fit</h2>
 
@@ -96,15 +136,15 @@ width:150px;
 
 <p>The color could be slightly different between on the screen and in practice. / Please note that body builds vary by pers</p>
 
-<h3>R$52.81</h3>
+<h3>R$ 46.34</h3>
 
-<button>Comprar</button>
+<button onclick="alert('Produto selecionado')">Comprar</button>
 
 </div>
 
 
 
-<div class="produto">
+<div class="card">
 
 <h2>John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet</h2>
 
@@ -112,15 +152,15 @@ width:150px;
 
 <p>From our Legends Collection, the Naga was inspired by the mythical water dragon that protects the ocean's pearl. Wear fa</p>
 
-<h3>R$1939.11</h3>
+<h3>R$ 2891.61</h3>
 
-<button>Comprar</button>
+<button onclick="alert('Produto selecionado')">Comprar</button>
 
 </div>
 
 
 
-<div class="produto">
+<div class="card">
 
 <h2>Solid Gold Petite Micropave </h2>
 
@@ -128,15 +168,15 @@ width:150px;
 
 <p>Satisfaction Guaranteed. Return or exchange any order within 30 days.Designed and sold by Hafeez Center in the United St</p>
 
-<h3>R$488.89</h3>
+<h3>R$ 432.78</h3>
 
-<button>Comprar</button>
+<button onclick="alert('Produto selecionado')">Comprar</button>
 
 </div>
 
 
 
-<div class="produto">
+<div class="card">
 
 <h2>White Gold Plated Princess</h2>
 
@@ -144,15 +184,15 @@ width:150px;
 
 <p>Classic Created Wedding Engagement Solitaire Diamond Promise Ring for Her. Gifts to spoil your love more for Engagement,</p>
 
-<h3>R$34.21</h3>
+<h3>R$ 32.59</h3>
 
-<button>Comprar</button>
+<button onclick="alert('Produto selecionado')">Comprar</button>
 
 </div>
 
 
 
-<div class="produto">
+<div class="card">
 
 <h2>Pierced Owl Rose Gold Plated Stainless Steel Double</h2>
 
@@ -160,15 +200,15 @@ width:150px;
 
 <p>Rose Gold Plated Double Flared Tunnel Plug Earrings. Made of 316L Stainless Steel</p>
 
-<h3>R$48.86</h3>
+<h3>R$ 36.71</h3>
 
-<button>Comprar</button>
+<button onclick="alert('Produto selecionado')">Comprar</button>
 
 </div>
 
 
 
-<div class="produto">
+<div class="card">
 
 <h2>WD 2TB Elements Portable External Hard Drive - USB 3.0 </h2>
 
@@ -176,15 +216,15 @@ width:150px;
 
 <p>USB 3.0 and USB 2.0 Compatibility Fast data transfers Improve PC Performance High Capacity; Compatibility Formatted NTFS</p>
 
-<h3>R$264.71</h3>
+<h3>R$ 237.26</h3>
 
-<button>Comprar</button>
+<button onclick="alert('Produto selecionado')">Comprar</button>
 
 </div>
 
 
 
-<div class="produto">
+<div class="card">
 
 <h2>SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s</h2>
 
@@ -192,15 +232,15 @@ width:150px;
 
 <p>Easy upgrade for faster boot up, shutdown, application load and response (As compared to 5400 RPM SATA 2.5” hard drive; </p>
 
-<h3>R$440.5</h3>
+<h3>R$ 376.39</h3>
 
-<button>Comprar</button>
+<button onclick="alert('Produto selecionado')">Comprar</button>
 
 </div>
 
 
 
-<div class="produto">
+<div class="card">
 
 <h2>Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5</h2>
 
@@ -208,15 +248,15 @@ width:150px;
 
 <p>3D NAND flash are applied to deliver high transfer speeds Remarkable transfer speeds that enable faster bootup and impro</p>
 
-<h3>R$375.51</h3>
+<h3>R$ 376.94</h3>
 
-<button>Comprar</button>
+<button onclick="alert('Produto selecionado')">Comprar</button>
 
 </div>
 
 
 
-<div class="produto">
+<div class="card">
 
 <h2>WD 4TB Gaming Drive Works with Playstation 4 Portable External Hard Drive</h2>
 
@@ -224,15 +264,15 @@ width:150px;
 
 <p>Expand your PS4 gaming experience, Play anywhere Fast and easy, setup Sleek design with high capacity, 3-year manufactur</p>
 
-<h3>R$335.37</h3>
+<h3>R$ 381.96</h3>
 
-<button>Comprar</button>
+<button onclick="alert('Produto selecionado')">Comprar</button>
 
 </div>
 
 
 
-<div class="produto">
+<div class="card">
 
 <h2>Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin</h2>
 
@@ -240,15 +280,15 @@ width:150px;
 
 <p>21. 5 inches Full HD (1920 x 1080) widescreen IPS display And Radeon free Sync technology. No compatibility for VESA Mou</p>
 
-<h3>R$1730.49</h3>
+<h3>R$ 2767.95</h3>
 
-<button>Comprar</button>
+<button onclick="alert('Produto selecionado')">Comprar</button>
 
 </div>
 
 
 
-<div class="produto">
+<div class="card">
 
 <h2>Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA) – Super Ultrawide Screen QLED </h2>
 
@@ -256,15 +296,15 @@ width:150px;
 
 <p>49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with dual 27 inch screen side by side QUANTUM DOT (QLED) TECHNOLOGY, </p>
 
-<h3>R$3672.01</h3>
+<h3>R$ 3062.43</h3>
 
-<button>Comprar</button>
+<button onclick="alert('Produto selecionado')">Comprar</button>
 
 </div>
 
 
 
-<div class="produto">
+<div class="card">
 
 <h2>BIYLACLESEN Women's 3-in-1 Snowboard Jacket Winter Coats</h2>
 
@@ -272,15 +312,15 @@ width:150px;
 
 <p>Note:The Jackets is US standard size, Please choose size as your usual wear Material: 100% Polyester; Detachable Liner F</p>
 
-<h3>R$188.99</h3>
+<h3>R$ 284.78</h3>
 
-<button>Comprar</button>
+<button onclick="alert('Produto selecionado')">Comprar</button>
 
 </div>
 
 
 
-<div class="produto">
+<div class="card">
 
 <h2>Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket</h2>
 
@@ -288,15 +328,15 @@ width:150px;
 
 <p>100% POLYURETHANE(shell) 100% POLYESTER(lining) 75% POLYESTER 25% COTTON (SWEATER), Faux leather material for style and </p>
 
-<h3>R$100.01</h3>
+<h3>R$ 119.55</h3>
 
-<button>Comprar</button>
+<button onclick="alert('Produto selecionado')">Comprar</button>
 
 </div>
 
 
 
-<div class="produto">
+<div class="card">
 
 <h2>Rain Jacket Women Windbreaker Striped Climbing Raincoats</h2>
 
@@ -304,15 +344,15 @@ width:150px;
 
 <p>Lightweight perfet for trip or casual wear---Long sleeve with hooded, adjustable drawstring waist design. Button and zip</p>
 
-<h3>R$178.68</h3>
+<h3>R$ 172.29</h3>
 
-<button>Comprar</button>
+<button onclick="alert('Produto selecionado')">Comprar</button>
 
 </div>
 
 
 
-<div class="produto">
+<div class="card">
 
 <h2>MBJ Women's Solid Short Sleeve Boat Neck V </h2>
 
@@ -320,15 +360,15 @@ width:150px;
 
 <p>95% RAYON 5% SPANDEX, Made in USA or Imported, Do Not Bleach, Lightweight fabric with great stretch for comfort, Ribbed </p>
 
-<h3>R$35.7</h3>
+<h3>R$ 39.94</h3>
 
-<button>Comprar</button>
+<button onclick="alert('Produto selecionado')">Comprar</button>
 
 </div>
 
 
 
-<div class="produto">
+<div class="card">
 
 <h2>Opna Women's Short Sleeve Moisture</h2>
 
@@ -336,15 +376,15 @@ width:150px;
 
 <p>100% Polyester, Machine wash, 100% cationic polyester interlock, Machine Wash & Pre Shrunk for a Great Fit, Lightweight,</p>
 
-<h3>R$31.52</h3>
+<h3>R$ 29.93</h3>
 
-<button>Comprar</button>
+<button onclick="alert('Produto selecionado')">Comprar</button>
 
 </div>
 
 
 
-<div class="produto">
+<div class="card">
 
 <h2>DANVOUY Womens T Shirt Casual Cotton Short</h2>
 
@@ -352,15 +392,22 @@ width:150px;
 
 <p>95%Cotton,5%Spandex, Features: Casual, Short Sleeve, Letter Print,V-Neck,Fashion Tees, The fabric is soft and has some s</p>
 
-<h3>R$56.57</h3>
+<h3>R$ 51.35</h3>
 
-<button>Comprar</button>
+<button onclick="alert('Produto selecionado')">Comprar</button>
 
 </div>
 
 
 
+</div>
+
+<footer>
+
+<p>Loja criada automaticamente</p>
+
+</footer>
+
 </body>
 
 </html>
-
